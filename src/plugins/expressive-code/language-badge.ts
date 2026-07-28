@@ -1,13 +1,17 @@
 /**
  * Based on the discussion at https://github.com/expressive-code/expressive-code/issues/153#issuecomment-2282218684
+ * Changes made based on fixes from the following:
+ * https://github.com/saicaca/fuwari/issues/750
+ * https://github.com/saicaca/fuwari/pull/751
+ * https://github.com/saicaca/fuwari/pull/723
+ * https://github.com/saicaca/fuwari/pull/758
  */
 import { definePlugin } from "@expressive-code/core";
 
 export function pluginLanguageBadge() {
 	return definePlugin({
 		name: "Language Badge",
-		// @ts-expect-error
-		baseStyles: ({ _cssVar }) => `
+		baseStyles: () => `
       [data-language]::before {
         position: absolute;
         z-index: 2;
