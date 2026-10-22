@@ -1,5 +1,8 @@
 <div align="center">
 
+**Work in progress. Currently customizing for personal use and writing entries.**
+Below is the README from the original repo.
+
 <img src="./public/logo/icon.webp" width="88" height="88" alt="Shirone logo" />
 
 # Shirone
