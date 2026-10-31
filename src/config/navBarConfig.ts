@@ -130,7 +130,7 @@ export const LinkPresets: Record<string, NavBarLink> = {
 	},
 	GitHub: {
 		name: "GitHub",
-		url: "https://github.com/LyraVoid/Shirone",
+		url: "https://github.com/gardenstorm",
 		icon: "fa7-brands:github",
 		external: true,
 		pageKey: "github",
@@ -140,26 +140,23 @@ export const LinkPresets: Record<string, NavBarLink> = {
 const defaultNavBarConfig: NavBarConfig = {
 	links: [
 		LinkPresets.Home,
-		LinkPresets.Archive,
-		LinkPresets.Friends,
+		LinkPresets.Projects,
 		LinkPresets.Moments,
-		LinkPresets.Anime,
-		LinkPresets.Compass,
-		LinkPresets.Albums,
+		LinkPresets.Timeline,
+		LinkPresets.About,
+
 		{
 			name: i18n(I18nKey.more),
 			icon: "material-symbols:apps-rounded",
 			children: [
-				LinkPresets.Timeline,
-				LinkPresets.Projects,
+				LinkPresets.Archive,
 				LinkPresets.Devices,
+				LinkPresets.Anime,
 				LinkPresets.Games,
-				LinkPresets.Skills,
 				// 分类/标签入口不进导航菜单（避免菜单项过多），预设已登记指向独立页面，
 				// 需要时取消注释即可
 				// LinkPresets.Categories,
 				// LinkPresets.Tags,
-				LinkPresets.About,
 				LinkPresets.GitHub,
 			],
 		},

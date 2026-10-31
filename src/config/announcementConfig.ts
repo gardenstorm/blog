@@ -8,8 +8,8 @@ import { withUserConfig } from "../utils/config-overlay.ts";
 export const announcementConfig: AnnouncementConfig = withUserConfig(
 	"announcement",
 	{
-		title: "", // 公告标题，填空使用 i18n 字符串 Key.announcement
-		content: "The only way to do great work is to love what you do", // 公告内容
+		title: "Status", // 公告标题，填空使用 i18n 字符串 Key.announcement
+		content: "Working on projects!", // 公告内容
 		closable: true, // 允许用户关闭公告
 		link: {
 			enable: true, // 启用链接
