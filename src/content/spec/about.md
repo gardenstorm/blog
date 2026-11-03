@@ -14,8 +14,12 @@ Possible topics include:
 - 🎨 **Creative pursuits**: design, videos, mock-ups.
 - 👩‍💻 **Code exploration**: web dev and data projects, current topics in the industry. 
 - ⌨️ **Hardware + IT experiences**: builds I've done or troubleshooting I did. 
-- 🌐 **Open source adventures**: the decentralized web and using Linux.
+- 🌐 **Open source adventures**: the decentralized web, using Linux, local AI.
 - 📝 Plus my thoughts on articles and other topics I find interesting!
+
+## ✦ AI Use
+
+Yes, I use AI. Not for slop creation, but for assistance with writing, coding, or other things I get lost or stuck on.
 
 ## ✦ Credits
 

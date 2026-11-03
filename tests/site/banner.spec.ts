@@ -24,7 +24,8 @@ async function waitForBannerState(
 
 async function expectSubtitleTyping(page: import("@playwright/test").Page) {
 	const subtitle = page.locator("#banner-wrapper [data-banner-home-copy] p");
-	const expected = "特別なことはないけど、君がいると十分です";
+	const expected =
+		"Even if things don’t go as you’d hoped, you can still enjoy the process.";
 	await expect(subtitle).toHaveAttribute("data-subtitle-state", "typing");
 	const typingText = await subtitle.textContent();
 	expect(typingText).toBeTruthy();
@@ -301,7 +302,9 @@ test.describe("banner wallpaper", () => {
 		const response = await request.get("/");
 		expect(response.ok()).toBe(true);
 		const html = await response.text();
-		expect(html).toContain("特別なことはないけど、君がいると十分です");
+		expect(html).toContain(
+			"Even if things don’t go as you’d hoped, you can still enjoy the process.",
+		);
 		expect(html).toContain("<picture");
 		expect(html).toContain('fetchpriority="high"');
 		expect(html).not.toContain("/assets/banner/desktop/1.webp");
@@ -371,11 +374,10 @@ test.describe("banner wallpaper", () => {
 		await expect(page.locator("#banner-wrapper")).toHaveAttribute(
 			"data-home-subtitles",
 			JSON.stringify([
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"Even if things don’t go as you’d hoped, you can still enjoy the process.",
+				"The greatest joy of magic lies in searching for it.",
+				"Not all those who wander are lost.",
+				"Every journey has its final day. Don't rush.",
 			]),
 		);
 	});
@@ -390,7 +392,7 @@ test.describe("banner wallpaper", () => {
 
 		await page.goto("/", { waitUntil: "domcontentloaded" });
 		await waitForBannerState(page, true);
-		await expect(page.locator("#banner-wrapper h1")).toHaveText("Shirone");
+		await expect(page.locator("#banner-wrapper h1")).toHaveText("Erika's Blog");
 		await expectSubtitleTyping(page);
 		await expect(page.locator("#navbar")).toHaveClass(
 			/top-app-bar--transparent/,
@@ -623,7 +625,9 @@ test.describe("banner wallpaper", () => {
 		await waitForBannerState(page, true);
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
-		).toHaveText("特別なことはないけど、君がいると十分です");
+		).toHaveText(
+			"Even if things don’t go as you’d hoped, you can still enjoy the process.",
+		);
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
 		).toHaveAttribute("data-subtitle-state", "complete");
@@ -648,7 +652,9 @@ test.describe("banner wallpaper", () => {
 		await waitForBannerState(page, true);
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
-		).toHaveText("特別なことはないけど、君がいると十分です");
+		).toHaveText(
+			"Even if things don’t go as you’d hoped, you can still enjoy the process.",
+		);
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
 		).toHaveAttribute("data-subtitle-state", "complete");
@@ -697,17 +703,17 @@ test.describe("banner wallpaper", () => {
 			),
 		).toBe("preserved");
 
-		await page.locator('#navbar a[href="/friends/"]').click();
+		await page.locator('#navbar a[href="/moments/"]').click();
 		await page.waitForFunction(
 			() =>
 				document.getElementById("swup-container")?.dataset.currentPage ===
-				"friends",
+				"moments",
 		);
 		await expect(page.locator("[data-banner-context-title]")).toHaveText(
-			"Friends",
+			"Moments",
 		);
 		await expect(page.locator("[data-banner-context-description]")).toHaveText(
-			"Link exchange is welcome — see the About page for how to apply.",
+			"Short notes — bits of life, work and everything in between.",
 		);
 		await expect(page.locator("[data-banner-context-meta]")).toBeHidden();
 		expect(
@@ -741,11 +747,11 @@ test.describe("banner wallpaper", () => {
 			).__bannerMotionStates = states;
 		});
 
-		await page.locator('#navbar a[href="/friends/"]').click();
+		await page.locator('#navbar a[href="/moments/"]').click();
 		await page.waitForFunction(
 			() =>
 				document.getElementById("swup-container")?.dataset.currentPage ===
-				"friends",
+				"moments",
 		);
 		await page.waitForFunction(() => {
 			const states =
@@ -785,12 +791,12 @@ test.describe("banner wallpaper", () => {
 					window.swup as typeof window.swup & {
 						navigate: (url: string) => void;
 					}
-				).navigate("/friends/");
+				).navigate("/moments/");
 			});
 			await page.waitForFunction(
 				() =>
 					document.getElementById("swup-container")?.dataset.currentPage ===
-					"friends",
+					"moments",
 			);
 			await expect(page.locator("#banner-wrapper")).toHaveAttribute(
 				"data-context-motion",
