@@ -1,8 +1,13 @@
-<div align="center">
+> [!IMPORTANT]
+>Work in progress!
 
-**Work in progress. Currently customizing for personal use and writing entries.**
+Currently I am: 
+- Customizing for personal use
+- Writing posts
 
 Below is the README from the original repo.
+
+<div align="center">
 
 <img src="./public/logo/icon.webp" width="88" height="88" alt="Shirone logo" />
 
