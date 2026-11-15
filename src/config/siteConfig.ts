@@ -65,17 +65,17 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 		dim: {
 			// 在图片上覆盖黑色遮罩以提高标题和顶部栏的对比度；opacity 范围为 0-1。
 			enable: true,
-			opacity: 0.24,
+			opacity: 0.3,
 		},
 		homeText: {
 			// 仅在首页 Banner 中显示，标题与副标题会上下居中排列。
 			enable: true,
 			title: "Erika's Blog",
 			subtitle: [
-				"Even if things don’t go as you’d hoped, you can still enjoy the process.",
-				"The greatest joy of magic lies in searching for it.",
-				"Not all those who wander are lost.",
-				"Every journey has its final day. Don't rush.",
+				"Even if things don’t go as you’d hoped, you can still enjoy the process. -Himmel",
+				"The greatest joy of magic lies in searching for it. -Frieren",
+				"Not all those who wander are lost. -Tolkien",
+				"Every journey has its final day. Don't rush. -Zhongli",
 			],
 			typewriter: {
 				// 副标题逐字显示；关闭后直接显示完整副标题。
