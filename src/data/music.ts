@@ -14,6 +14,36 @@ import type { TrackDescriptor } from "@/types/musicConfig";
  */
 export const musicTracks: readonly TrackDescriptor[] = [
 	{
+		id: "mac-anu",
+		title: "rtown0 (Δ Server Aqua Capital Mac Anu)",
+		artist: "BooHooWoo",
+		cover:
+			"https://nu.vgmtreasurechest.com/soundtracks/dot-hack-game-music-perfect-collection/00%20Front%20display.jpg",
+		source:
+			"https://nu.vgmtreasurechest.com/soundtracks/dot-hack-game-music-perfect-collection/tnklbwde/1-04%20rtown0%20%28%CE%94%20Server%20Aqua%20Capital%20Mac%20Anu%29.mp3",
+		duration: 134,
+	},
+	{
+		id: "carmina-gadelica",
+		title: "rtown2 (Λ Server Cultural City Carmina Gadelica)",
+		artist: "BooHooWoo",
+		cover:
+			"https://nu.vgmtreasurechest.com/soundtracks/dot-hack-game-music-perfect-collection/00%20Front%20display.jpg",
+		source:
+			"https://nu.vgmtreasurechest.com/soundtracks/dot-hack-game-music-perfect-collection/mqwiclxh/1-06%20rtown2%20%28%CE%9B%20Server%20Cultural%20City%20Carmina%20Gadelica%29.mp3",
+		duration: 127,
+	},
+	{
+		id: "breg-epona",
+		title: "Dual City - Breg Epona",
+		artist: "Chikayo Fukuda",
+		cover:
+			"https://lambda.vgmtreasurechest.com/soundtracks/dot-hack-g.u.-game-music-ost-2/00%20Front%20display.jpg",
+		source:
+			"https://lambda.vgmtreasurechest.com/soundtracks/dot-hack-g.u.-game-music-ost-2/pozhkgbl/2-05.%20Dual%20City%20-%20Breg%20Epona.mp3",
+		duration: 178,
+	},
+	{
 		id: "dazbee",
 		title: "口笛で愛は歌えない",
 		artist: "Dazbee",

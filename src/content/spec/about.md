@@ -6,7 +6,7 @@ I like creating things that are beautiful, functional, and accessible. My backgr
 
 Career lingo aside... I like to keep up with seasonal anime, play too much Genshin Impact, and enjoy spending time with my family's cats. I also enjoy observing the decentralized web (mostly Lemmy + Mbin) and learning about digital privacy.
 
-Exploring the Fediverse inspired me to create this blog instead of posting on typical social media. This way I can chronicle my work, thoughts, and experiences on my own terms. (One day I'll try Forgejo instead of GitHub!)
+Exploring the Fediverse inspired me to create this blog instead of posting on typical social media. This way I can chronicle my work, thoughts, and experiences on my own terms. 
 
 ## ✦ Topics
 
@@ -19,7 +19,7 @@ Possible topics include:
 
 ## ✦ AI Use
 
-Yes, I use AI. Mostly as my editor, code troubleshooter, and brainstorm partner. 
+Yes, I use AI. Mostly as my editor, code troubleshooter, and brainstorm partner. I always end up correcting or fighting with it, though.....
 
 ## ✦ Credits
 
