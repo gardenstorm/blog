@@ -74,7 +74,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 			subtitle: [
 				"Even if things don’t go as you’d hoped, you can still enjoy the process. -Himmel",
 				"The greatest joy of magic lies in searching for it. -Frieren",
-				"Not all those who wander are lost. -Tolkien",
+				"Not all those who wander are lost. -Tolkein",
 				"Every journey has its final day. Don't rush. -Zhongli",
 			],
 			typewriter: {

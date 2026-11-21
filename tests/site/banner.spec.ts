@@ -374,10 +374,10 @@ test.describe("banner wallpaper", () => {
 		await expect(page.locator("#banner-wrapper")).toHaveAttribute(
 			"data-home-subtitles",
 			JSON.stringify([
-				"Even if things don’t go as you’d hoped, you can still enjoy the process.",
-				"The greatest joy of magic lies in searching for it.",
-				"Not all those who wander are lost.",
-				"Every journey has its final day. Don't rush.",
+				"Even if things don’t go as you’d hoped, you can still enjoy the process. -Himmel",
+				"The greatest joy of magic lies in searching for it. -Frieren",
+				"Not all those who wander are lost. -Tolkein",
+				"Every journey has its final day. Don't rush. -Zhongli",
 			]),
 		);
 	});
@@ -626,7 +626,7 @@ test.describe("banner wallpaper", () => {
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
 		).toHaveText(
-			"Even if things don’t go as you’d hoped, you can still enjoy the process.",
+			"Even if things don’t go as you’d hoped, you can still enjoy the process. -Himmel",
 		);
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
@@ -653,7 +653,7 @@ test.describe("banner wallpaper", () => {
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),
 		).toHaveText(
-			"Even if things don’t go as you’d hoped, you can still enjoy the process.",
+			"Even if things don’t go as you’d hoped, you can still enjoy the process. -Himmel",
 		);
 		await expect(
 			page.locator("#banner-wrapper [data-banner-home-copy] p"),

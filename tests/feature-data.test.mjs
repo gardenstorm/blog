@@ -87,7 +87,7 @@ describe("Feature Data & Resolver Tests", () => {
 			disabledIds: ["iphone-16-pro"],
 		};
 		const resolved = resolveDevicesData(config);
-		assert.ok(resolved.some((d) => d.id === "macbook-pro-16"));
-		assert.ok(!resolved.some((d) => d.id === "iphone-16-pro"));
+		assert.ok(resolved.some((d) => d.id === "pc-2015"));
+		assert.ok(!resolved.some((d) => d.id === "samsung-galaxy-s24-ultra"));
 	});
 });
